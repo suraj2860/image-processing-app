@@ -12,14 +12,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{baseUrl}}/api/status/f376510c-a3b9-4677-bb81-51f0513176ac",
+					"raw": "{{baseUrl}}/api/status/{{requestId}}",
 					"host": [
 						"{{baseUrl}}"
 					],
 					"path": [
 						"api",
 						"status",
-						"f376510c-a3b9-4677-bb81-51f0513176ac"
+						"{{requestId}}"
 					]
 				}
 			},
@@ -27,6 +27,24 @@
 		},
 		{
 			"name": "upload-api",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var response = pm.response.json();\r",
+							"\r",
+							"// Extract the requestId from the response\r",
+							"var requestId = response.requestId;\r",
+							"\r",
+							"// Set the requestId as an environment variable (or collection variable if needed)\r",
+							"pm.collectionVariables.set(\"requestId\", requestId);"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -36,7 +54,7 @@
 						{
 							"key": "file",
 							"type": "file",
-							"src": "/C:/Users/User/Downloads/test_csv2.csv"
+							"src": "/C:/Users/User/Downloads/test_csv.csv"
 						}
 					]
 				},
@@ -79,7 +97,11 @@
 	"variable": [
 		{
 			"key": "baseUrl",
-			"value": "http://52.90.145.97:5173"
+			"value": "http://54.237.102.69:5173"
+		},
+		{
+			"key": "requestId",
+			"value": ""
 		}
 	]
 }
