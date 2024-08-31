@@ -54,7 +54,7 @@
 						{
 							"key": "file",
 							"type": "file",
-							"src": ""
+							"src": []
 						}
 					]
 				},
@@ -97,7 +97,7 @@
 	"variable": [
 		{
 			"key": "baseUrl",
-			"value": "http://54.237.102.69:5173"
+			"value": "http://44.202.10.113:5173"
 		},
 		{
 			"key": "requestId",
