@@ -118,7 +118,7 @@ Fields:
 - Input: 
   - file = CSV file (multipart/form-data)
 - CSV format: S. No., Product Name, Input Image Urls
-- Sample CSV file: [sample.csv](/uploads/1725025369203-test_csv2.csv)
+- Sample CSV file: [sample.csv](/sample/1725076236675-test_csv2.csv)
 - Output: JSON with requestId and statusUrl
 - Example Response:
   ```json
