@@ -85,6 +85,7 @@ Fields:
   - Details: Automatically updated whenever the request status changes.
   - Default Value: Date.now.
 
+![request collection](/assets/request.png)
 
 ### 2. Product Collection
 
@@ -109,6 +110,9 @@ Fields:
   - Description: Foreign key linking the product to its corresponding processing request.
   - Details: References the requestId in the Request collection.
   - Constraints: Required, Reference to requests.
+  
+  ![product collection](/assets/product.png)
+
 
 ## 5. API Documentation
 
