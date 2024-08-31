@@ -1,6 +1,6 @@
 # Image Processing Application
 
-Hosted on AWS EC2 instance : [image-processing-app.com](http://3.87.238.89:5173/)
+Hosted on AWS EC2 instance : [image-processing-app.com](http://52.90.145.97:5173/)
 
 Postman Collection: [image-processing-app.postman_collection.json](/image-processing-app.postman_collection.json)
 
