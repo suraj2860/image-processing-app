@@ -1,0 +1,85 @@
+{
+	"info": {
+		"_postman_id": "b66e691d-9fcb-4227-a31b-19e04ca06e73",
+		"name": "image-processing-app",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28204494"
+	},
+	"item": [
+		{
+			"name": "status-api",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/api/status/f376510c-a3b9-4677-bb81-51f0513176ac",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"status",
+						"f376510c-a3b9-4677-bb81-51f0513176ac"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "upload-api",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/User/Downloads/test_csv2.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/upload",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"upload"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://3.87.238.89:5173"
+		}
+	]
+}
