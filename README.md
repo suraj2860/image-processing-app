@@ -1,6 +1,6 @@
 # Image Processing Application
 
-Hosted on AWS EC2 instance : [image-processing-app.com](http://44.202.10.113:5173/)
+Hosted on AWS EC2 instance : [image-processing-app.com](http://44.202.10.113:5173/)  ** Closed due to limited free tier.
 
 NOTE: The server is hosted on a free tier EC2 instance(t2.micro). Could break for large csv file. You can use this [sample csv](/sample/sample_csv.csv) file to test the server. I tried to send csv files with 10 rows, the EC2 instance became unresponsive and was not able to ssh for ~1 hour. could be beacuse of the free tier EC2 instance. 
 
